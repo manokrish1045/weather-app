@@ -3,7 +3,6 @@ import { Box, styled } from '@mui/material';
 import Sunset from './assets/images/bg.jpg';
 import Form from './components/Form';
 import Information from './components/Information';
-import { useNavigate } from 'react-router-dom';
 
 const Component = styled(Box)({
     height: '100vh',
@@ -23,7 +22,7 @@ const Image = styled(Box)({
 
 const Home = () => {
     const [result, setResult] = useState({})
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
     const logOut = () => {
         window.localStorage.clear();
         window.location.href = "./login";

@@ -4,7 +4,7 @@ import Home from "./Home.js";
 import { Route, Routes } from "react-router-dom";
 import Login from './Login';
 import Register from './Register';
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import {  Navigate,  } from "react-router-dom";
 import { useSelector } from 'react-redux';
 
 function App() {
@@ -30,7 +30,7 @@ export default App;
 
 
 
-{/* <div>
+/* <div>
   <Container>
     <Col className="text-center">
       <h1>React Authentication Tutorial</h1>
@@ -47,4 +47,4 @@ export default App;
 
     </Routes>
   </Container>
-</div> */}
+</div> */
