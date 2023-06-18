@@ -67,11 +67,33 @@ form>button:hover {
     width: 100px; */
     color: #212125;
     /* background: #2d2a2a; */
-    margin: 20px;
+    /* margin: 20px; */
     /* display: flex;
     flex-direction: column; */
 }
 
 .ptag {
     color: #212125;
+}
+
+@media screen and (max-width:576px) {
+    .container1 {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url('./assets/rain.jpeg');
+        background-size: cover;
+    }
+
+    .wrapper1 {
+        width: 70%;
+        height: 80%;
+    }
+
+    .cred1 {
+        gap: 0;
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
 }
