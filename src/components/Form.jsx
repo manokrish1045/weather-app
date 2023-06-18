@@ -1,16 +1,17 @@
 import { useState } from 'react';
 import { Box, InputBase, Button, styled } from '@mui/material';
 import { getWeather } from '../services/api';
-
+import "./Form.css"
 const Container = styled(Box)({
     background: '#445A6F',
-    padding: 10
+    padding: 80,
 });
 
 const Input = styled(InputBase)({
     color: '#FFF',
     marginRight: 20,
-    fontSize: 18
+    fontSize: 18,
+    gap: 10
 });
 
 const GetButton = styled(Button)({
@@ -30,13 +31,13 @@ const Form = ({ setResult }) => {
     }
 
     return (
-        <Container>
-            <Input 
+        <Container className='form1' >
+            <Input
                 placeholder="City"
                 onChange={(e) => handleChange(e)}
                 name="city"
             />
-            <Input 
+            <Input
                 placeholder="Country"
                 onChange={(e) => handleChange(e)}
                 name="country"
